@@ -10,3 +10,6 @@
 
 	console.log('Hello world')
 
+>I study in the course of JS Pre-School 2024
+
+>I am learning elementary English
