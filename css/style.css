@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	background-color:aquamarine;
 	font-family: "Shadows Into Light", cursive;
@@ -9,4 +13,10 @@ h1 {
 
 code {
 	color: red;
+}
+
+.shadows-into-light-regular {
+	font-family: "Shadows Into Light", cursive;
+	font-weight: 400;
+	font-style: normal;
 }
