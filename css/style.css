@@ -1,40 +1,77 @@
-* {
-	box-sizing: border-box;
+body {
+	font-family: "Shadows Into Light", cursive;
+	color: #333;
 }
 
-html {
-	scroll-behavior: smooth;
+.wrapper {
+	min-height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.page {
+	flex: 1 1 auto;
 }
 
 .container {
-	max-width: 1440px;
+	max-width: 1200px;
+
 	margin: 0 auto;
+	padding: 0 15px;
 }
 
-.nav-list {
+.header {
+	background-color: rgb(141, 141, 141);
+}
+
+.menu__list {
+	min-height: 80px;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	list-style: none;
 }
 
-.nav-link {
-	padding: 0 20px;
+.menu__link {
+	padding: 0 10px;
 	line-height: 50px;
 	list-style: none;
+	color: azure;
+	font-size: 20px;
+
 }
 
-body {
-	min-height: 100vh;
-	margin: 0;
-	padding: 0;
+.menu__link:hover{
+	text-decoration: underline;
+}
+
+.page {background-color: #e2e2e2;}
+
+.section__profile {
+	padding: 50px;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	background-color:aquamarine;
-	font-family: "Shadows Into Light", cursive;
+	justify-content: center;
 }
 
+.profile__data {
+	padding-left: 100px;
+}
+
+h1 {
+	font-size: 56px;
+	color: chocolate;
+}
+
+h2 {
+	font-size: 40px;
+	color: rgb(210, 138, 30);
+}
+
+.footer {
+	background-color: rgb(141, 141, 141);
+}
+/*
 h1 {
 	color: blue;
 }
@@ -42,9 +79,22 @@ h1 {
 code {
 	color: red;
 }
+	*/
 
-.shadows-into-light-regular {
-	font-family: "Shadows Into Light", cursive;
-	font-weight: 400;
-	font-style: normal;
+@media (max-width: 1170px) {
+	.container {
+		max-width: 970px;
+	}
+}
+
+@media (max-width: 969.99px) {
+	.container {
+		max-width: 750px;
+	}
+}
+
+@media (max-width: 749.99px) {
+	.container {
+		max-width: none;
+	}
 }
